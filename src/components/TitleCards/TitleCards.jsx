@@ -17,7 +17,7 @@ const TitleCards = ({title,category}) => {
   
   
 
-// ye nhi smj aaya kuch shift daba k scroll n krna pde isliye h
+
 const handleWheel = (event)=>{
   event.preventDefault();
   cardsRef.current.scrollLeft += event.deltaY
