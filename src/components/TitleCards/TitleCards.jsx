@@ -22,7 +22,7 @@ const handleWheel = (event)=>{
   event.preventDefault();
   cardsRef.current.scrollLeft += event.deltaY
 }
-// why now playing is in double quote
+
 useEffect(() => {
   fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`, options)
     .then(response => response.json())
